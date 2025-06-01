@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toi du Futur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Parle à ton Toi du Futur</h1>
+    <p>Écris un message à toi-même, que tu recevras à la date de ton choix.</p>
+
+    <form id="messageForm">
+      <textarea id="message" placeholder="Ton message pour le futur..." required></textarea>
+      <input type="date" id="date" required>
+      <button type="submit">Enregistrer le message</button>
+    </form>
+
+    <div id="confirmation" class="hidden">
+      ✅ Ton message a été enregistré ! Il te sera rappelé à la date choisie.
+    </div>
+
+    <div class="footer">Made with ❤️ par Max</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
