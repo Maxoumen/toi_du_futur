@@ -9,21 +9,24 @@
 <body>
   <div class="container">
     <h1>Parle à ton Toi du Futur</h1>
-    <p>Écris un message à toi-même, que tu recevras à la date de ton choix.</p>
+    <p>Écris un message à toi-même, ou enregistre ta voix, que tu recevras plus tard.</p>
 
     <form id="messageForm">
       <textarea id="message" placeholder="Ton message pour le futur..." required></textarea>
       <input type="date" id="date" required>
-      <button type="submit">Enregistrer le message</button>
+      <button type="submit">Enregistrer le message écrit</button>
     </form>
 
+    <button id="startRecording">🎙️ Enregistrer un message vocal</button>
+    <div id="audioList" style="margin-top: 20px;"></div>
+
     <div id="confirmation" class="hidden">
-      ✅ Ton message a été enregistré ! Il te sera rappelé à la date choisie.
+      ✅ Ton message a été enregistré !
     </div>
 
     <div class="footer">Made with ❤️ par Max</div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="voice.js"></script>
 </body>
 </html>
